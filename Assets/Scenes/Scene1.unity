@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6276215605372806637, guid: 1f23e9d54ff6b40edb62da27fd01a5d3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
     - target: {fileID: 6531026620171372526, guid: 1f23e9d54ff6b40edb62da27fd01a5d3, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -450,7 +454,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 15302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -780,6 +784,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1256210540942164022, guid: 98f3aabfcbf15463aa4dba34bfbffc1a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
     - target: {fileID: 1256210540942164040, guid: 98f3aabfcbf15463aa4dba34bfbffc1a, type: 3}
       propertyPath: m_Name
       value: Brick (1)
@@ -1303,7 +1311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064978818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.699358, y: 0.21622695, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1318,6 +1326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1086128532}
+  - component: {fileID: 1086128531}
   m_Layer: 0
   m_Name: ParallaxBG
   m_TagString: Untagged
@@ -1325,6 +1334,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1086128531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086128530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fcb061b422634062af518c859cb23a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+  - {fileID: 1194526550}
+  - {fileID: 383912454}
+  - {fileID: 1957532556}
+  - {fileID: 889807921}
+  speedMultiplier:
+  - 0.01
+  - 0.007
+  - 0.004
+  - 0.003
+  mario: {fileID: 1517702271}
+  mainCamera: {fileID: 519420032}
 --- !u!4 &1086128532
 Transform:
   m_ObjectHideFlags: 0
@@ -6603,6 +6636,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212449068182340028, guid: 6b622841fa34d4febbd7fb25323920ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
+    - target: {fileID: 212485629035317970, guid: 6b622841fa34d4febbd7fb25323920ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
+    - target: {fileID: 212860051288900820, guid: 6b622841fa34d4febbd7fb25323920ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
+    - target: {fileID: 212998453750003898, guid: 6b622841fa34d4febbd7fb25323920ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b622841fa34d4febbd7fb25323920ff, type: 3}
 --- !u!1 &1517702267
@@ -6694,7 +6743,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
+  - {fileID: 2100000, guid: c598c51e3ed9547a089a49359e0f500a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6921,7 +6970,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -7570,6 +7619,10 @@ PrefabInstance:
       propertyPath: m_DrawMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1256210540942164022, guid: 98f3aabfcbf15463aa4dba34bfbffc1a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
     - target: {fileID: 1256210540942164023, guid: 98f3aabfcbf15463aa4dba34bfbffc1a, type: 3}
       propertyPath: m_Size.x
       value: 3
@@ -7643,6 +7696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bouncybox
       objectReference: {fileID: 0}
+    - target: {fileID: 3037478077344731292, guid: a13bb7e55d08c4890a4caa4bb361bab8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
     - target: {fileID: 8397790501483832917, guid: a13bb7e55d08c4890a4caa4bb361bab8, type: 3}
       propertyPath: usedQuestionBox
       value: 
@@ -7660,6 +7717,10 @@ PrefabInstance:
       propertyPath: debris
       value: 
       objectReference: {fileID: 3270341471861628626, guid: 89460273334094247a2cc21ca055a120, type: 3}
+    - target: {fileID: 3609063143862148724, guid: fa1d596ca9b05409183f4413e5e8151f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf879de1b82744aaa8db756c48558934, type: 2}
     - target: {fileID: 3609063143862148725, guid: fa1d596ca9b05409183f4413e5e8151f, type: 3}
       propertyPath: m_RootOrder
       value: 11

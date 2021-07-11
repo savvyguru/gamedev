@@ -995,6 +995,8 @@
         "m_GuidSerialized": "454ed868-64aa-4684-b00e-290298a202dd"
     },
     "m_Name": "Color",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Color",
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1131,6 +1133,8 @@
         "m_GuidSerialized": "1cb57046-d91c-44eb-a6b6-8c1341ad063b"
     },
     "m_Name": "MainTex",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "MainTex",
     "m_DefaultReferenceName": "MainTex",
     "m_OverrideReferenceName": "_MainTex",
     "m_GeneratePropertyBlock": true,
@@ -1366,6 +1370,8 @@
         "m_GuidSerialized": "3ad071b1-e23d-4c99-b8c9-a99fbf683b0b"
     },
     "m_Name": "Glow Texture2D",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Glow Texture2D",
     "m_DefaultReferenceName": "Glow_Texture2D",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1374,7 +1380,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"4825c3ae95e304873808be2dd3f231f9\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"6d01128451800443aba9b4f695b17feb\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_Modifiable": true,

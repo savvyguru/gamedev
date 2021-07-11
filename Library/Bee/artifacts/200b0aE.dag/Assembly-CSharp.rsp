@@ -349,6 +349,7 @@
 "Assets/MenuController.cs"
 "Assets/PlayerController.cs"
 "Assets/QuestionBoxController.cs"
+"Assets/Scripts/ParallaxScroller.cs"
 "Assets/SpawnDebris.cs"
 -langversion:8.0
 
