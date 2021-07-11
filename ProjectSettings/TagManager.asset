@@ -12,6 +12,7 @@ TagManager:
   - BG0
   - BG4
   - BG8
+  - BG10
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - BG0
   - BG4
   - BG8
-  - 
+  - BG10
   - 
   - 
   - 

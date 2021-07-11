@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
   m_Name: UniversalRenderPipelineAsset
   m_EditorClassIdentifier: 
-  k_AssetVersion: 6
-  k_AssetPreviousVersion: 5
+  k_AssetVersion: 9
+  k_AssetPreviousVersion: 9
   m_RendererType: 1
   m_RendererData: {fileID: 0}
   m_RendererDataList:
-  - {fileID: 11400000, guid: 014b2ceefe88d4bbca0a3f7d6ede9ad2, type: 2}
-  - {fileID: 11400000, guid: 34f45c81d90dd42b6ae7015151884ac3, type: 2}
+  - {fileID: 11400000, guid: 7a16e01bb1f31454eba1ef33c7aff5e9, type: 2}
+  - {fileID: 11400000, guid: b936be54970ec4a8d81733a15ae3daed, type: 2}
   m_DefaultRendererIndex: 0
   m_RequireDepthTexture: 0
   m_RequireOpaqueTexture: 0
@@ -33,7 +33,10 @@ MonoBehaviour:
   m_AdditionalLightsRenderingMode: 1
   m_AdditionalLightsPerObjectLimit: 4
   m_AdditionalLightShadowsSupported: 0
-  m_AdditionalLightsShadowmapResolution: 512
+  m_AdditionalLightsShadowmapResolution: 2048
+  m_AdditionalLightsShadowResolutionTierLow: 256
+  m_AdditionalLightsShadowResolutionTierMedium: 512
+  m_AdditionalLightsShadowResolutionTierHigh: 1024
   m_ShadowDistance: 50
   m_ShadowCascadeCount: 1
   m_Cascade2Split: 0.25
@@ -49,6 +52,7 @@ MonoBehaviour:
   m_UseAdaptivePerformance: 1
   m_ColorGradingMode: 0
   m_ColorGradingLutSize: 32
+  m_UseFastSRGBLinearConversion: 0
   m_ShadowType: 1
   m_LocalShadowsSupported: 0
   m_LocalShadowsAtlasResolution: 256
