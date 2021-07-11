@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,9 +17,18 @@ public class PlayerController : MonoBehaviour
     private  Animator marioAnimator;
     private AudioSource marioAudio;
 
+    public Transform enemyLocation;
+    public Text scoreText;
+    private int score = 0;
+    private bool countScoreState = false;
+
     void OnCollisionEnter2D(Collision2D col)
     {
-      if (col.gameObject.CompareTag("Ground")) onGroundState = true;
+      if (col.gameObject.CompareTag("Ground")){
+        onGroundState = true;
+        countScoreState = false; // reset score state
+        scoreText.text = "Score: " + score.ToString();
+      } 
       if (col.gameObject.CompareTag("Obstacles")) onGroundState = true;
     }
     void  PlayJumpSound(){
@@ -39,6 +49,7 @@ public class PlayerController : MonoBehaviour
        if (Input.GetKeyDown("space") && onGroundState){
           marioBody.AddForce(Vector2.up * upSpeed, ForceMode2D.Impulse);
           onGroundState = false;
+          countScoreState = true; //check if Gomba is underneath
       }
       if (Input.GetKeyUp("a") || Input.GetKeyUp("d")){
             // stop
@@ -74,6 +85,15 @@ public class PlayerController : MonoBehaviour
           marioSprite.flipX = false;
       }
 
+     if (!onGroundState && countScoreState)
+      {
+          if (Mathf.Abs(transform.position.x - enemyLocation.position.x) < 0.5f)
+          {
+              countScoreState = false;
+              score++;
+              Debug.Log(score);
+          }
+      }
     }
 
 }
