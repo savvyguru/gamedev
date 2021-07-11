@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,12 +26,23 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
       if (col.gameObject.CompareTag("Ground")){
+        Debug.Log("On the ground");
         onGroundState = true;
         countScoreState = false; // reset score state
         scoreText.text = "Score: " + score.ToString();
       } 
-      if (col.gameObject.CompareTag("Obstacles")) onGroundState = true;
+      if (col.gameObject.CompareTag("Enemy")){
+        Debug.Log("You have collided with the enemy");
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
+        
+      }
+      if (col.gameObject.CompareTag("Obstacles")){
+        onGroundState = true;
+      } 
+      
     }
+       
     void  PlayJumpSound(){
       marioAudio.PlayOneShot(marioAudio.clip);
     }
